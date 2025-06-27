@@ -24,10 +24,17 @@ The install script will compile the AppleScript into an application and adds a L
 
 ## Usage
 When the app detects a new release is available you will see a dialouge prompt:
-![]()
+
+![Update Dialogue](assets/images/update.png)
 
 Once 'Update' is selected, the new version is downloaded in the background and installed. You will be asked for your admin password in order to install into /Applications as seen here:
-![]()
+
+![Password Dialogue](assets/images/password.png)
 
 Once installed, a notification will appear:
-![]()
+
+![Notification](assets/images/notif.png)
+
+
+### Note
+As with any script sourced from the internet, it’s wise to review its contents priot to running it.
