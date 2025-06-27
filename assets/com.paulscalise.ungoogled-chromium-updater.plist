@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
-  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-  <dict>
-    <key>Label</key>
-    <string>com.paulscalise.ungoogled-chromium-updater</string>
-
-    <key>ProgramArguments</key>
-    <array>
-      <string>/Users/paulscalise/Desktop/Ungoogled-Chromium Updater.app/Contents/MacOS/applet</string>
-    </array>
-
-    <key>RunAtLoad</key>
-    <true/>
-
-    <key>StartInterval</key>
-    <integer>86400</integer>
-
-    <key>StandardOutPath</key>
-    <string>/tmp/ungoogled-chromium-updater.out</string>
-    <key>StandardErrorPath</key>
-    <string>/tmp/ungoogled-chromium-updater.err</string>
-  </dict>
+<dict>
+	<key>Label</key>
+	<string>com.paulscalise.ungoogled-chromium-updater</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/paulscalise/Ungoogled-Chromium-Updater/Ungoogled-Chromium Updater.app/Contents/MacOS/applet</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/tmp/ungoogled-chromium-updater.err</string>
+	<key>StandardOutPath</key>
+	<string>/tmp/ungoogled-chromium-updater.out</string>
+	<key>StartInterval</key>
+	<integer>86400</integer>
+</dict>
 </plist>

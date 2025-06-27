@@ -60,11 +60,18 @@ echo "Setting custom‐icon attribute"
 # 5) Force LaunchServices to re‐register that .app (so it picks up the new icon):
 #/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister \
  #   -f "$APP_DIR"
+ 
+echo "Updating LaunchAgent plist with actual program path"
+PLIST_SRC="$ASSETS_DIR/com.paulscalise.ungoogled-chromium-updater.plist"
+APP_EXECUTABLE="$APP_DIR/Contents/MacOS/applet"
+
+/usr/libexec/PlistBuddy -c "Set :ProgramArguments:0 $APP_EXECUTABLE" "$PLIST_SRC"
 
 # --- 5) Refresh Finder’s icon cache ---
 echo "Refreshing Finder cache"
 qlmanage -r
 killall Finder >/dev/null 2>&1 || true
+
 
 # --- 6) Install and load the LaunchAgent plist ---
 echo "Installing LaunchAgent"
