@@ -1,6 +1,6 @@
 # Ungoogled-Chromium-Updater
 
-A simple automator for updating Ungoogled-Chromium on macOS.
+A simple application for updating Ungoogled-Chromium on macOS via LaunchAgents.
 
 The automation checks for the latest version from the [ungoogled-chromium-macos repo](https://github.com/ungoogled-software/ungoogled-chromium-macos) every 24 hours and updates the app if a new release is available.
 This application is architecture agnostic, so it will work on both Intel and Apple Silicon without modification.
